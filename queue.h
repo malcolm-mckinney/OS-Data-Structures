@@ -71,4 +71,11 @@ extern int queue_delete(queue_t queue, void** item);
  */
 extern int queue_insert(queue_t queue, void* item, int pri);
 
+/*
+* Peeks at the head, without popping it.
+* Return -1 on error.
+*/
+extern int queue_peek(queue_t queue, void** item);
+
+
 #endif __QUEUE_H__
